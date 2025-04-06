@@ -1,0 +1,43 @@
+/* Resting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-links{
+    margin-left: auto;
+}
+
+.logo{
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(18, 94, 175);
+}
+
+.navbar{
+    background-color: rgb(143, 244, 255);
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card{
+    background-color: rgb(196, 111, 0);
+    
+}
+
+footer{
+    background-color: rgb(95, 218, 218);
+    margin: 0;
+    padding: 0;
+}

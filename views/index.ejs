@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs') %>
+
+<img class="w-100" src="https://st2.depositphotos.com/1006899/8421/i/450/depositphotos_84219350-stock-photo-word-blog-suspended-by-ropes.jpg" alt="" style="height: 500px;">
+<h1 class="text-center">My Posts</h1>
+<div class="container d-flex justify-content-center w-100 flex-wrap">
+    
+    <% if(typeof Posts !== "undefined" && Posts.length > 0) { %>
+        <% Posts.forEach((post) => { %>
+            <div class="card m-5">
+                <div class="card-body">
+                  <h5 class="card-title"><%= post.title %></h5>
+                  <p class="card-text"><%= post.message %></p>
+                  <a href="/post" class="btn btn-primary">Edit</a>
+                  <button class="delete btn btn-danger" onclick="deletePost('<%= post.title %>')">Delete</button>
+                </div>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p class="text-center fs-2 ">No posts yet. Create one!</p>
+    <% } %>
+
+
+
+</div>
+
+
+<%- include('partials/footer.ejs') %>
