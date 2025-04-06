@@ -1,0 +1,17 @@
+{
+  "name": "capstone2-blog",
+  "version": "1.0.0",
+  "description": "👋 Hey! there everybody this is a Simple Blog Website made with HTML, Tailwind, Express and EJS Templating with a session based storage without any databases.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
