@@ -36,6 +36,33 @@
     
 }
 
+.typewriter{
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    height: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    display: inline-block;
+    position: relative;
+}
+
+.typed-text{
+    font-size: 100px;
+}
+
+.cursor{
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 footer{
     background-color: rgb(95, 218, 218);
     margin: 0;

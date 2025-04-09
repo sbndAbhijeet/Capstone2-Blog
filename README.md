@@ -68,3 +68,22 @@ Including at least one CSS file for the styling of the website
     Test the application on different devices and browsers to ensure the styling works correctly.
 
     Fix any bugs or issues that came up during testing.
+
+## New Things I Learned
+
+
+✅ 1.method-override Middleware in app.js?
+You need this to make POST requests act like DELETE when the URL includes ?_method=DELETE.
+
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+This tells Express to check for _method in the query string or form and override the method accordingly.
+
+app.delete('/delete/:id', (req, res) => {
+    posts = posts.filter(p => p.id !== req.params.id)
+    res.redirect('/')
+})
+
+<!-- <form action="/delete/<%= post.id %>?_method=DELETE" method="POST">
+    <button class="delete btn btn-danger m-1">Delete</button>
+</form> -->
