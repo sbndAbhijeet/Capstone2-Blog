@@ -1,6 +1,6 @@
 # Blog Website using Express Capstone Project
 
- 👋 Hey! there everybody this is a Simple Blog Website made with HTML, Tailwind, Express and EJS Templating with a session based storage without any databases.
+ 👋 Hey! there everybody this is a Simple Blog Website made with HTML, Bootstrap/CSS, Express and EJS Templating with a session based storage without any databases.
 
 ## Project Description
 The goal of this project is to create a Blog web application using Node.js, Express.js, and EJS. The application will allow users to create and view blog posts. Posts will not persist between sessions as no database will be used in this version of the application. Styling will be an important aspect of this project to ensure a good user experience.
